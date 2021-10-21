@@ -1,6 +1,7 @@
 import Head from "next/head";
+import Header from "../components/Header";
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <div className=''>
       <Head>
@@ -8,7 +9,13 @@ export default function Home() {
         {/* <link rel='icon' href='/favicon.ico' /> */}
       </Head>
 
-      <h1>This is the Instagram build</h1>
+      {/* Header */}
+      <Header />
+      {/* Feed */}
+
+      {/* Modal */}
     </div>
   );
-}
+};
+
+export default Home;
