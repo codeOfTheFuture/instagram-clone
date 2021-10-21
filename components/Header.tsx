@@ -5,14 +5,14 @@ import HeaderRight from "./HeaderRight";
 const Header: React.FC = () => {
   return (
     <div>
-      <h1>Header</h1>
-
-      {/* Left */}
-      <HeaderLeft />
-      {/* Center */}
-      <HeaderCenter />
-      {/* Right */}
-      <HeaderRight />
+      <div className='flex justify-between max-w-6xl'>
+        {/* Left */}
+        <HeaderLeft />
+        {/* Center */}
+        <HeaderCenter />
+        {/* Right */}
+        <HeaderRight />
+      </div>
     </div>
   );
 };
