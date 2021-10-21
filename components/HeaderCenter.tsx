@@ -1,7 +1,7 @@
 const HeaderCenter: React.FC = () => {
   return (
     <div>
-      <h1>Header Center</h1>
+      <input type='text' placeholder='Search' />
     </div>
   );
 };
