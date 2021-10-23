@@ -5,7 +5,7 @@ import HeaderRight from "./HeaderRight";
 const Header: React.FC = () => {
   return (
     <div>
-      <div className='flex justify-between max-w-6xl'>
+      <div className='flex justify-between max-w-6xl mx-5 lg:mx-auto'>
         {/* Left */}
         <HeaderLeft />
         {/* Center */}
