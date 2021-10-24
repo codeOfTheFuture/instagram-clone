@@ -1,3 +1,4 @@
+import PostButtons from "./PostButtons";
 import PostHeader from "./PostHeader";
 
 interface PostProps {
@@ -10,15 +11,13 @@ interface PostProps {
 
 const Post: React.FC<PostProps> = ({ id, username, userImg, img, caption }) => {
   return (
-    <div>
-      <h1>A single post</h1>
-
+    <div className='bg-white my-7 border rounded-sm'>
       {/* Header */}
       <PostHeader username={username} userImg={userImg} />
       {/* Img */}
-
+      <img className='object-cover w-full' src={img} alt='Post Image' />
       {/* Buttons */}
-
+      <PostButtons />
       {/* caption */}
 
       {/* comments */}
