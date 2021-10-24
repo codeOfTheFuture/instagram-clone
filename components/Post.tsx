@@ -1,4 +1,5 @@
 import PostButtons from "./PostButtons";
+import PostCaption from "./PostCaption";
 import PostHeader from "./PostHeader";
 
 interface PostProps {
@@ -19,7 +20,7 @@ const Post: React.FC<PostProps> = ({ id, username, userImg, img, caption }) => {
       {/* Buttons */}
       <PostButtons />
       {/* caption */}
-
+      <PostCaption username={username} caption={caption} />
       {/* comments */}
 
       {/* input box */}
