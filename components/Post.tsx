@@ -1,3 +1,5 @@
+import PostHeader from "./PostHeader";
+
 interface PostProps {
   id: number;
   username: string;
@@ -12,7 +14,7 @@ const Post: React.FC<PostProps> = ({ id, username, userImg, img, caption }) => {
       <h1>A single post</h1>
 
       {/* Header */}
-
+      <PostHeader username={username} userImg={userImg} />
       {/* Img */}
 
       {/* Buttons */}
