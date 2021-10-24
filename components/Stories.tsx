@@ -23,14 +23,6 @@ const Stories: React.FC = () => {
           username={profile.username}
         />
       ))}
-      {/* Story */}
-      {/* Story */}
-      {/* Story */}
-      {/* Story */}
-      {/* Story */}
-      {/* Story */}
-      {/* Story */}
-      {/* Story */}
     </div>
   );
 };
