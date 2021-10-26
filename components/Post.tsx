@@ -1,3 +1,4 @@
+import InputBox from "./InputBox";
 import PostButtons from "./PostButtons";
 import PostCaption from "./PostCaption";
 import PostHeader from "./PostHeader";
@@ -24,6 +25,7 @@ const Post: React.FC<PostProps> = ({ id, username, userImg, img, caption }) => {
       {/* comments */}
 
       {/* input box */}
+      <InputBox />
     </div>
   );
 };
