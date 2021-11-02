@@ -13,6 +13,8 @@ const Suggestion: React.FC<SuggestionProps> = ({ avatar, username, companyName }
         <h2 className="font-semibold text-sm">{username}</h2>
         <h3 className='text-xs text-gray-400'>Works at {companyName}</h3>
       </div>
+
+      <button className='text-blue-400 text-xs font-bold'>Follow</button>
     </div>
   )
 }
