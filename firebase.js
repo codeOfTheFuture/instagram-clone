@@ -5,12 +5,12 @@ import { getStorage } from "firebase/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDkfpJESVAwiag9vHV2cy6-BYxL7-xbmoo",
-  authDomain: "instagram-clone-8e3fa.firebaseapp.com",
-  projectId: "instagram-clone-8e3fa",
-  storageBucket: "instagram-clone-8e3fa.appspot.com",
-  messagingSenderId: "144630888105",
-  appId: "1:144630888105:web:c5f7421a1a84ead0b15bb8",
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID,
+  appId: process.env.APP_ID,
 };
 
 // Initialize Firebase
