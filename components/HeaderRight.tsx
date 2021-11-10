@@ -7,15 +7,17 @@ import {
 } from "@heroicons/react/outline";
 import { HomeIcon } from "@heroicons/react/solid";
 import { useSession, signIn, signOut } from "next-auth/react";
+import { useRouter } from "next/router";
 
 const HeaderRight: React.FC = () => {
   const { data: session } = useSession();
+  const router = useRouter();
 
   console.log(session);
 
   return (
     <div className='flex items-center justify-end space-x-4'>
-      <HomeIcon className='navBtn' />
+      <HomeIcon className='navBtn' onClick={() => router.push("/")} />
       <MenuIcon className='h-6 md:hidden cursor-pointer' />
 
       {session ? (
