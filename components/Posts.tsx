@@ -23,14 +23,10 @@ const Posts: React.FC = () => {
 
   return (
     <div>
-      {posts.map((post) => (
+      {posts.map((post: DocumentData) => (
         <Post
           key={post.id}
-          id={post.id}
-          username={post.data().username}
-          userImg={post.data().profileImg}
-          img={post.data().image}
-          caption={post.data().caption}
+          post={post}
         />
       ))}
     </div>
