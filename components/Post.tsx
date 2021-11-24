@@ -108,7 +108,7 @@ const Post: React.FC<PostProps> = ({ post }) => {
 
       {session && <PostButtons likePost={likePost} hasLiked={hasLiked} />}
 
-      <PostCaption username={username} caption={caption} />
+      <PostCaption username={username} caption={caption} likes={likes.length} />
 
       {comments.length > 0 && <Comments comments={comments} />}
 
