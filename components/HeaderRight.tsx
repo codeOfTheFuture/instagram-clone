@@ -8,12 +8,12 @@ import {
 import { HomeIcon } from "@heroicons/react/solid";
 import { useSession, signIn, signOut } from "next-auth/react";
 import { useRouter } from "next/router";
+import { useModal } from "../context/ModalContext";
 
 const HeaderRight: React.FC = () => {
   const { data: session } = useSession();
   const router = useRouter();
-
-  console.log(session);
+  const { modalOpen, openModal } = useModal();
 
   return (
     <div className='flex items-center justify-end space-x-4'>
@@ -28,7 +28,10 @@ const HeaderRight: React.FC = () => {
               3
             </div>
           </div>
-          <PlusCircleIcon className='navBtn' />
+          <PlusCircleIcon
+            className='navBtn'
+            onClick={openModal}
+          />
           <UserGroupIcon className='navBtn' />
           <HeartIcon className='navBtn' />
 
