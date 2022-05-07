@@ -1,4 +1,4 @@
-import faker from "faker";
+import { faker } from '@faker-js/faker';
 import { useEffect, useState } from "react";
 import Story from "./Story";
 import { useSession } from "next-auth/react";
@@ -9,7 +9,8 @@ const Stories: React.FC = () => {
 
   useEffect(() => {
     const suggestions = [...Array(20)].map((_, i) => ({
-      ...faker.helpers.contextualCard(),
+      username: faker.internet.userName(),
+      avatar: faker.image.avatar(),
       id: i,
     }));
 
