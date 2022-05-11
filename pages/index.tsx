@@ -7,8 +7,8 @@ const Home: React.FC = () => {
   return (
     <div className='bg-gray-50 h-screen overflow-y-scroll scrollbar-hide'>
       <Head>
+        <link rel='icon' href='/favicon.ico' />
         <title>Instagram Clone</title>
-        {/* <link rel='icon' href='/favicon.ico' /> */}
       </Head>
 
       <Header />
